@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Friends</title>
+    <!-- <script src="script.js" defer></script> -->
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3968a4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1877f2;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .friend-card {
+            height: 300px;
+            width: 250px;
+            background-color: #f8f8f8;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .friend-card:hover {
+            box-shadow: 7px 7px 10px rgba(234, 229, 229, 0.552);
+            transform: scale(1);
+        }
+
+        .friend-avatar {
+            width: 130px;
+            height: 180px;
+            background-size: contain;
+            border-radius: 100px;
+            margin: 0 auto 10px;
+        }
+
+        .friend-name {
+            font-size: 20px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .friend-contact {
+            display: flex;
+            font-size: 14px;
+            color: #777;
+            justify-content: center;
+
+            /* margin: 5px 0; */
+            /* // padding: 150px; */
+        }
+
+        button {
+            background-color: #1877f2;
+            font-size: 20px;
+            width: 120px;
+            height: 40px;
+            border-radius: 5px;
+            margin-bottom: 3px;
+            margin-left: 75px;
+            transform: scale(0.8);
+        }
+
+        button:hover {
+            transform: scale(1);
+
+            box-shadow: 3px 3px 10px rgba(27, 46, 219, 0.511);
+        }
+
+        img {
+            filter: drop-shadow(10px 10px 10px rgb(65, 62, 62));
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Friends</h1>
+    </header>
+    <div class="container">
+        <div class="friend-card">
+            <img src="image\profile_2.jpg" alt="Friend 1" class="friend-avatar" />
+            <h2 class="friend-name">KIT KONNOR</h2>
+            <p class="friend-contact">Email: friend1@example.com</p>
+            <p class="friend-contact">Phone: +1234567890</p>
+            <button id="confirm" class="accept-btn"  >Accept</button>
+            <button class="decline-btn delete">Decline</button>
+        </div>
+        <div class="friend-card">
+            <img src="image\profile_1.jpg" alt="Friend 2" class="friend-avatar" />
+            <h2 class="friend-name">JENNY</h2>
+            <p class="friend-contact">Email: friend2@example.com</p>
+            <p class="friend-contact">Phone: +9876543210</p>
+            <button id="confirm" class="accept-btn" >Accept</button>
+            <button  class="decline-btn delete">Decline</button>
+        </div>
+        <div class="friend-card">
+            <img src="image\profile_3.jpg" alt="Friend 2" class="friend-avatar" />
+            <h2 class="friend-name">JOE</h2>
+            <p class="friend-contact">Email: friend2@example.com</p>
+            <p class="friend-contact">Phone: +9876543210</p>
+            <button id="confirm" class="accept-btn" >Accept</button>
+            <button  class="decline-btn delete">Decline</button>
+        </div>
+        <div class="friend-card">
+            <img src="image\post_4.jpg" alt="Friend 2" class="friend-avatar" />
+            <h2 class="friend-name">FATIMA</h2>
+            <p class="friend-contact">Email: friend2@example.com</p>
+            <p class="friend-contact">Phone: +9876543210</p>
+            <button id="confirm" class="accept-btn" >Accept</button>
+            <button  class="decline-btn delete">Decline</button>
+        </div>
+        <div class="friend-card">
+            <img src="image\post_5.jpg" alt="Friend 2" class="friend-avatar" />
+            <h2 class="friend-name">SEBASTIAN</h2>
+            <p class="friend-contact">Email: friend2@example.com</p>
+            <p class="friend-contact">Phone: +9876543210</p>
+            <button id="confirm" class="accept-btn" >Accept</button>
+            <button  class="decline-btn delete">Decline</button>
+        </div>
+        <div class="friend-card">
+            <img src="image\post_1.jpg" alt="Friend 2" class="friend-avatar" />
+            <h2 class="friend-name">WILLIAM</h2>
+            <p class="friend-contact">Email: friend2@example.com</p>
+            <p class="friend-contact">Phone: +9876543210</p>
+            <button id="confirm" class="accept-btn" >Accept</button>
+            <button  class="decline-btn delete">Decline</button>
+        </div>
+        <div class="friend-card">
+            <img src="image\pp.webp" alt="Friend 2" class="friend-avatar" />
+            <h2 class="friend-name">PRANJAY</h2>
+            <p class="friend-contact">Email: friend2@example.com</p>
+            <p class="friend-contact">Phone: +9876543210</p>
+            <button id="confirm" class="accept-btn" >Accept</button>
+            <button  class="decline-btn delete">Decline</button>
+        </div>
+        <div class="friend-card">
+            <img src="image\post_2.jpg" alt="Friend 2" class="friend-avatar" />
+            <h2 class="friend-name">YASMIN</h2>
+            <p class="friend-contact">Email: friend2@example.com</p>
+            <p class="friend-contact">Phone: +9876543210</p>
+            <button id="confirm" class="accept-btn" >Accept</button>
+            <button class="decline-btn delete">Decline</button>
+        </div>
+        <div class="friend-card">
+            <img src="image\contact_1.jpg" alt="Friend 2" class="friend-avatar" />
+            <h2 class="friend-name">FRIEND</h2>
+            <p class="friend-contact">Email: friend2@example.com</p>
+            <p class="friend-contact">Phone: +9876543210</p>
+            <button id="confirm" class="accept-btn" >Accept</button>
+            <button  class="decline-btn delete">Decline</button>
+        </div>
+        <div class="friend-card">
+            <img src="image\contact_2.jpg" alt="Friend 2" class="friend-avatar" />
+            <h2 class="friend-name">KIZZY</h2>
+            <p class="friend-contact">Email: friend2@example.com</p>
+            <p class="friend-contact">Phone: +9876543210</p>
+            <button id="confirm" class="accept-btn" >Accept</button>
+            <button  class="decline-btn delete">Decline</button>
+        </div>
+        <div class="friend-card">
+            <img src="image\contact_5.jpg" alt="Friend 2" class="friend-avatar" />
+            <h2 class="friend-name">RITA</h2>
+            <p class="friend-contact">Email: friend2@example.com</p>
+            <p class="friend-contact">Phone: +9876543210</p>
+            <button id="confirm" class="accept-btn" >Accept</button>
+            <button  class="decline-btn delete">Decline</button>
+        </div>
+        <div class="friend-card">
+            <img src="image\contact_4.jpg" alt="Friend 2" class="friend-avatar" />
+            <h2 class="friend-name">ELSOIE</h2>
+            <p class="friend-contact">Email: friend2@example.com</p>
+            <p class="friend-contact">Phone: +9876543210</p>
+
+            <button class="accept-btn" >Accept</button>
+            <button class="decline-btn delete">Decline</button>
+
+        </div>
+    </div>
+    <script>
+
+        let container = document.querySelector(".container") ;
+
+
+        function removeTodo(event){
+            const clicked = event.target ;
+
+
+            if(clicked.matches(".delete") == true){
+                const parent = clicked.parentElement ;
+                parent.remove() ;
+            }
+        }
+
+        function addTodo(event){
+            
+            const clicki=event.target;
+
+            if(clicki.matches(".accept-btn")==true){
+                const par = clicki.parentElement ;
+                const username=par.children[1].textContent;
+                alert(username+" accepted");
+                clicki.textContent = "Confirm" ;
+                const ele = par.children[5] ;
+                ele.style.display = "none" ;
+            }
+        }
+
+
+        container.addEventListener("click" , removeTodo) ;
+        container.addEventListener("click", addTodo);
+    </script>
+</body>
+
+</html>

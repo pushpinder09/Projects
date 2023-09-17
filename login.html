@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login Form</title>
+    <link rel="stylesheet" href="style2.css">
+    <script>
+        function authenticate() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            if (email === "" || password === "") {
+                alert("Please fill in both email and password fields.");
+                
+            } else {
+                // Simplified authentication logic (replace with actual authentication logic)
+                if (email === "user@example.com" && password === "pw123456") {
+                    location.replace("http://127.0.0.1:5500/index.html");
+                
+                } else {
+                    alert("Invalid email or password. Please try again.");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Facebook</h1>
+        <p>Facebook helps you connect and share<br> with the people in your life.</p>
+    </div>
+
+
+    <header>
+        <div class="box">
+            <input type="email" name="email" id="email" placeholder="Email address or phone number"><br>
+            <input type="password" name="password" id="password" placeholder="Password">
+        </div>
+
+        <div class="link">
+           <button class="btn" onclick="authenticate()">Log In</button>
+        </div>
+
+        <div class="link1">
+            <a href="#">Forgotten Password?</a>
+        </div>
+        <div class="link2">
+          <a href="#">Create New Account</a>
+        </div>
+        <div class="p" style="margin-left: 1rem;"><span style="font-style:italic;">Create a Page</span> for a celebrity, brand or business.</div>
+    </header>
+   
+</body>
+</html>
